@@ -1,1 +1,0 @@
-# mcp-stock-analyzer
