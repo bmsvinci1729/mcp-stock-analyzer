@@ -111,5 +111,5 @@ The twitter post:<br />
 - [Claude Desktop for Linux](https://github.com/aaddrick/claude-desktop-debian) - Calmly do follow the instructions
 - I did get several issues related to X API's 403 Forbidden error, do ensure token_ids and secrets are correct, sometimes a rate-limit issue.
 - Does this end here? No, the MCP lecture above discusses next steps and future of MCP which we must look forward towards
-- My code could have been more modularized, and defined each try catch blocks in separate files, more modifications and other features like search tweets, adding some more analytic tools, scraping more stocks can be some more improvements
+- My code could have been more modularized, and defined each try catch blocks in separate files, more modifications and other features like search tweets, adding some more analytic tools, scraping more stocks can be few improvements
 
