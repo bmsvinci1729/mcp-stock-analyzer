@@ -1,7 +1,7 @@
 # MCP - Stock Analyzer
 
 
-Model Context Protocol (MCP) server system for real-time stock market datat scraping, storage and retrieval, analysis, and automated social media posting. 
+Model Context Protocol (MCP) server system for real-time stock market data scraping, storage and retrieval, analysis, and automated social media posting. 
 Three specialized MCP servers that enable AI agents to collect, store and extract stock data, analyze market performance from yfinance, and post impressive market updates to X (Twitter)
 
 ## Disclaimer
@@ -11,7 +11,7 @@ This project is for educational and research purposes only. Not financial advice
 A demonstration of building MCP servers that integrate with Agents like Claude Desktop and VS Code (MCP Client). System's major 3 components:
 1. Stock Scraping server: Real time stock data fetched from Yahoo Finance
 2. Database server: Fetched data stored, retrieved, and analyzed using SQLite3.
-3. X(Twitter) server: The analyzed data is curated into an impressive post and automatically posted as market updates on X (Twitter) usign X APIs
+3. X(Twitter) server: The analyzed data is curated into an impressive post and automatically posted as market updates on X (Twitter) using X APIs
 ## So how does this work ? 🤔 
 
 The MCP allows the MCP Clients to use external tools. MCP servers described above shall expose the required tools that the AI/Client can call when in need.
