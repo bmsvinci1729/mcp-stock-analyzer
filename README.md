@@ -110,6 +110,7 @@ The twitter post:<br />
 - [X API](https://developer.x.com/en/docs/x-api)
 - [Claude Desktop for Linux](https://github.com/aaddrick/claude-desktop-debian) - Calmly do follow the instructions
 - I did get several issues related to X API's 403 Forbidden error, do ensure token_ids and secrets are correct, sometimes a rate-limit issue.
+- Maintain tweet size under 280 characters (Can be configured)
 - Does this end here? No, the MCP lecture above discusses next steps and future of MCP which we must look forward towards
 - My code could have been more modularized, and defined each try catch blocks in separate files, more modifications and other features like search tweets, adding some more analytic tools, scraping more stocks can be few improvements
 
