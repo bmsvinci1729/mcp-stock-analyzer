@@ -8,14 +8,12 @@ from mcp.server import Server
 from mcp.types import Tool, TextContent
 from datetime import datetime
 
-# Add project directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 app = Server("stock-scraping-mcp-server")
 
 @app.list_tools()
 async def list_tools():
-    # Register available tools for this MCP server
     return [
         Tool(
             name="get_multiple_stocks",
@@ -61,12 +59,11 @@ async def call_tool(name: str, arguments: dict):
                             "timestamp": datetime.now().isoformat()
                         })
                 except Exception as stock_e:
-                    # Log error for this symbol
                     results.append({
                         "symbol": symbol,
                         "error": str(stock_e)
                     })
-            # Sort by percent change, descending
+            # Sorting here by perent change (hence the better performer at the top)
             results.sort(key=lambda x: x.get("change_percent", 0), reverse=True)
             return [TextContent(
                 type="text",
@@ -77,7 +74,7 @@ async def call_tool(name: str, arguments: dict):
 
 async def main():
     from mcp.server.stdio import stdio_server
-    # Start the MCP server using stdio
+    # Start the MCP server using stdio 
     async with stdio_server() as (read_stream, write_stream):
         await app.run(read_stream, write_stream, app.create_initialization_options())
 

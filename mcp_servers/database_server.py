@@ -1,8 +1,11 @@
-#!/usr/bin/env python3
+"""
+    Standard MCP server functions:
+        1. list tools - each tool shall have a name, a description, and inputSchema(like a function input)
+        2. call tool - call each tool with required inputs, and define (just the way we define a declared function) each tool using try catch blocks
+"""
 import sys
 import os
 
-# Add the project directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import asyncio # for concurrent execution
