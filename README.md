@@ -12,13 +12,12 @@ A demonstration of building MCP servers that integrate with Agents like Claude D
 1. Stock Scraping server: Real time stock data fetched from Yahoo Finance
 2. Database server: Fetched data stored, retrieved, and analyzed using SQLite3.
 3. X(Twitter) server: The analyzed data is curated into an impressive post and automatically posted as market updates on X (Twitter) usign X APIs
-
 ## So how does this work ? 🤔 
 
 The MCP allows the MCP Clients to use external tools. MCP servers described above shall expose the required tools that the AI/Client can call when in need.
-1. Ask LLMs : "Get current price of Apple stock, and tweet about it" - very simple prompt.\
+1. Ask LLMs : "Get current price of Apple stock, and tweet about it" - very simple prompt.
 2. Now, Claude shall call :
-   - stock scraper tool to get Apple(firm 😅)'s current price
+   - stock scraper tool to get Apple's current price
    - database tool to store the data, and retrieve
    - twitter tool to post a tweet with the information 
 
@@ -98,7 +97,7 @@ The servers integrated into the AI now, the dropdown reveals the tools associate
   ```
 
 ## Learn more and dive deeper (resources)
-- [MCP]((https://modelcontextprotocol.io/introduction))
-- [X API]((https://developer.x.com/en/docs/x-api))
-- [Claude Desktop for Linux]((https://github.com/aaddrick/claude-desktop-debian)) - Calmly do follow the instructions
+- [MCP](https://modelcontextprotocol.io/introduction)
+- [X API](https://developer.x.com/en/docs/x-api)
+- [Claude Desktop for Linux](https://github.com/aaddrick/claude-desktop-debian) - Calmly do follow the instructions
 - I did get several issues related to X API's 403 Forbidden error, do ensure token_ids and secrets are correct, sometimes a rate-limit issue.
