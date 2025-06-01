@@ -98,7 +98,7 @@ The servers integrated into the AI now, the dropdown reveals the tools associate
   ```
 
 ## Learn more and dive deeper (resources)
-- [MCP]([url](https://modelcontextprotocol.io/introduction))
-- [X API]([url](https://developer.x.com/en/docs/x-api))
-- [Claude Desktop for Linux]([url](https://github.com/aaddrick/claude-desktop-debian)) - Calmly do follow the instructions
+- [MCP]((https://modelcontextprotocol.io/introduction))
+- [X API]((https://developer.x.com/en/docs/x-api))
+- [Claude Desktop for Linux]((https://github.com/aaddrick/claude-desktop-debian)) - Calmly do follow the instructions
 - I did get several issues related to X API's 403 Forbidden error, do ensure token_ids and secrets are correct, sometimes a rate-limit issue.
