@@ -24,6 +24,14 @@ The MCP allows the MCP Clients to use external tools. MCP servers described abov
 The servers integrated into the AI now, the dropdown reveals the tools associated with them 
 ![Screenshot from 2025-06-01 12-52-24](https://github.com/user-attachments/assets/a7af09dd-fe47-41b8-ad91-912f3bee516a)
 
+
+<br />
+The twitter post:<br />
+
+![Screenshot from 2025-06-01 16-01-55](https://github.com/user-attachments/assets/70e1609e-7515-43d6-8f0b-8e98070735bb)
+
+
+
 ## Setup
 ### Prerequisites
   - Python 3.10 or higher
