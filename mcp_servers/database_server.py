@@ -105,7 +105,7 @@ async def call_tool(name: str, arguments: dict):
                 text=f"Found {len(results)} records: {json.dumps([dict(zip(['id', 'symbol', 'price', 'volume', 'market_cap', 'pe_ratio', 'timestamp'], row)) for row in results[:10]])}"
             )]
         except Exception as e:
-            return [TextContent(type="text", text=f"❌ Database error: {str(e)}")]
+            return [TextContent(type="text", text=f"Database error: {str(e)}")]
     
     elif name == "get_top_performers":
         limit = arguments.get("limit", 5)
@@ -148,7 +148,7 @@ async def call_tool(name: str, arguments: dict):
                 text=f"Top {len(performers)} performers: {json.dumps(performers, indent=2)}"
             )]
         except Exception as e:
-            return [TextContent(type="text", text=f"❌ Performance analysis error: {str(e)}")]
+            return [TextContent(type="text", text=f"Performance analysis error: {str(e)}")]
     
     elif name == "store_stock_data":
         try:
@@ -186,10 +186,10 @@ async def call_tool(name: str, arguments: dict):
             
             return [TextContent(
                 type="text",
-                text=f"✅ Stored data for {arguments['symbol']} at ${arguments['price']}"
+                text=f"Stored data for {arguments['symbol']} at ${arguments['price']}"
             )]
         except Exception as e:
-            return [TextContent(type="text", text=f"❌ Storage error: {str(e)}")]
+            return [TextContent(type="text", text=f"Storage error: {str(e)}")]
 
 async def main():
     from mcp.server.stdio import stdio_server
