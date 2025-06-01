@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "stock-scraping": {
+      "command": "/home/bms/stock-mcp-project/stock-mcp/bin/python",
+      "args": ["/home/bms/stock-mcp-project/mcp_servers/stock_scraping_mcp_server.py"],
+      "env": {}
+    },
+    "twitter": {
+      "command": "/home/bms/stock-mcp-project/stock-mcp/bin/python",
+      "args": ["/home/bms/stock-mcp-project/mcp_servers/twitter_mcp_server.py"],
+      "env": {}
+    },
+    "database": {
+      "command": "/home/bms/stock-mcp-project/stock-mcp/bin/python",
+      "args": ["/home/bms/stock-mcp-project/mcp_servers/database_server.py"],
+      "env": {}
+    }
+  }
+}
