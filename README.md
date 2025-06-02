@@ -26,7 +26,7 @@ The servers integrated into the AI now, the dropdown reveals the tools associate
 
 
 <br />
-The twitter post:<br />
+The twitter post (https://x.com/schweigenSMB/status/1929122184720421040):<br />
 
 ![Screenshot from 2025-06-01 16-01-55](https://github.com/user-attachments/assets/70e1609e-7515-43d6-8f0b-8e98070735bb)
 
